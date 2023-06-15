@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portofolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("Baground1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      color: #f3ecf2;
+      padding: 0px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2; /* Increase z-index to keep header above content */
+    }
+
+    nav {
+      background-color: #e641d8;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      font-size: 20px; /* Increased font size */
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav ul li a:hover{
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 10px white;
+    }
+
+
+    section#hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px;
+      margin-top: 70px; /* Add margin to adjust content below fixed nav bar */
+    }
+
+    section#hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    section#hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section#products {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Set basic styles for the footer */
+
+    /* Set positioning rules to make the footer stick to the bottom */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      overflow-y: auto; /* Enable vertical scroll */
+    }
+
+    /* New styles for image and description */
+    section#hero .projects-container {
+      display: grid;
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section#hero .project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      padding: 10px;
+      max-width: 500px;
+    }
+
+    section#hero .project img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <center>
+          <h1>Portofolio</h1>
+        </center>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="projects-container">
+        <div class="project">
+          <img src="profile3.jpeg" alt="Project 1 Image">
+          <strong>
+            <span style="font-family: Marko One; color: rgb(202, 32, 188); font-size: 20px;">Clarissa shop</span>
+          </strong>
+          <p>Clarissa shop
+            Opened since 2015.
+            I sell these items only via WhatsApp, where I only share 
+            them via WhatsApp groups and stories.
+            Products sold include women's and men's tops, sneakers,
+             household appliances, baby equipment, accessories, cosmetics and other beauty tools.</p>
+        </div>
+
+        <div class="project">
+          <img src="profile5.jpeg" alt="Project 2 Image">
+          <strong>
+            <span style="font-family: Marko One; color: rgb(202, 32, 188); font-size: 20px;">Bisnis Pulsa</span>
+          </strong>
+          <p>Credit business ideas can be in the form of credit top-up services, quotas and electricity tokens for consumers.
+             As well as being able to provide a place where consumers can top up credit either directly through you</p>
+        </div>
+
+        <div class="project">
+          <img src="profile4.jpeg" alt="Project 3 Image">
+          <strong>
+            <span style="font-family: Marko One; color: rgb(202, 32, 188); font-size: 20px;">Smoothing</span>
+          </strong>
+          <p>Hair salons that offer hair straightening services using certain methods or products. Open a hair studio that specializes in smoothing services. Focus on hair care and straightening, and offer a variety of additional products and treatments 
+            that can help protect and repair hair. Offers straightening, restoration and dry hair treatments.</p>
+        </div>
+        <div class="project">
+          <img src="profile6.jpeg" alt="Project 4 Image">
+          <strong>
+            <span style="font-family: Marko One; color: rgb(202, 32, 188); font-size: 20px;">Jastip</span>
+          </strong>
+          <p>Serving Jastip Food and Specialty Products. In this Jastip business, I help customers get regional specialties, 
+            organic or natural products that are not available in their hometown, or unique and rare items. I will be responsible for procuring, purchasing, and shipping products to customers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
